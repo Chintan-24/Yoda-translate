@@ -9,7 +9,7 @@ function getTranslationURL(input){
 
 function errorHandler(error){
     console.log("Error Occured!", error)
-    alert("Error Occured! Maybe FORCE is not with you :(");
+    alert("Error Occured! Couldn't connect with server :(");
 }
 
 function clickHandler(){
