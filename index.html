@@ -2,6 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Yoda translater using API" />
+    <meta name="keywords" content="HTML,CSS,JavaScript" />
+    <meta name="author" content="Chintan" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yoda Speak Translator</title>
     <link rel="icon" href="fevicon.png" type="image/png" />
@@ -12,12 +15,12 @@
     <nav>
       <div class="nav">Yoda Speak Translator</div>
     </nav>
-    <main>
+    <main class="container">
       <textarea
         id="translate-input"
         placeholder="Put your text here to convert into Yoda language"
       ></textarea>
-      <button id="translate-button">Translate To Yoda Language</button>
+      <button id="translate-button">Translate To Yoda Language</button><br />
       <div class="div-text">Translation will come here &darr;</div>
 
       <div id="translate-output" class="output"></div>
@@ -29,6 +32,7 @@
           font-size: x-large;
           border-bottom: 1px solid grey;
           margin-bottom: 0.8rem;
+          display: inline-block;
         "
       >
         About

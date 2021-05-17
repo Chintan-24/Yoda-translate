@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;500&display=swap");
 
+@media only screen and (max-width: 600px) {
+  .nav {
+    font-size: 10px;
+  }
+}
+
 :root {
   --primary-color: rgb(48, 139, 71);
   --primary-color-dark: rgb(34, 102, 51);
@@ -22,6 +28,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    height: 100%;
+  }
+}
+
 body {
   background: url("bg-wide.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -41,10 +55,17 @@ body {
   display: flex;
   justify-content: center;
 }
+
 main {
   margin: auto;
   padding: 1rem;
   max-width: 600px;
+}
+
+.container {
+  min-height: 100%;
+  margin-bottom: -40px;
+  padding-bottom: -40px;
 }
 
 textarea {
@@ -81,6 +102,12 @@ button:hover {
 button:active {
   transform: scale(0.99);
   box-shadow: 0 0.1rem 1rem var(--color-black);
+}
+
+@media only screen and (max-width: 600px) {
+  button {
+    margin: 1.5rem 0rem;
+  }
 }
 
 .div-text {
@@ -123,4 +150,10 @@ footer {
     var(--color-black)
   );
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    position: relative;
+  }
 }
